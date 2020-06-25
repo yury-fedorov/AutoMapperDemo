@@ -1,0 +1,20 @@
+syntax = "proto3";
+package demo;
+
+enum Status
+{
+    sSuccess = 0;
+    sFailed = 1;
+    sSkipped = 2;
+}
+
+message TestResult
+{
+    string Package = 1;
+    string Class = 2;
+    Status Status = 3;
+    string Error = 4;
+    string StackTrace = 5;
+    int64 DurationMs = 6;
+    int32 CheckCount = 7;
+}
