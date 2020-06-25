@@ -1,5 +1,5 @@
 syntax = "proto3";
-package demo;
+package interface.protobuf;
 
 enum Status
 {
